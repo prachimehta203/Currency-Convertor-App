@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Currency Convertor</string>
+    <string name="Currency_prompt">Currency</string>
+    <string name="Currency_prompt1">Currency You Want To Convert Into?</string>
+    <string-array name="Currency">
+        <item>"US Dollar"</item>
+        <item>"European Euro"</item>
+        <item>"Japanese Yen"</item>
+        <item>"Indian Rupees"</item>
+    </string-array>
+</resources>

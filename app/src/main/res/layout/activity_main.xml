@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/gradient"
+    tools:context=".MainActivity">
+
+    <Spinner
+        android:id="@+id/s1"
+        android:layout_width="188dp"
+        android:layout_height="71dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="218dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginBottom="443dp"
+        android:entries="@array/Currency"
+        android:prompt="@string/Currency_prompt" />
+
+    <Spinner
+        android:id="@+id/s2"
+        android:layout_width="195dp"
+        android:layout_height="74dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="221dp"
+        android:layout_marginRight="31dp"
+        android:layout_marginBottom="436dp"
+        android:layout_toLeftOf="@+id/s1"
+        android:entries="@array/Currency"
+        android:prompt="@string/Currency_prompt1" />
+
+    <TextView
+        android:id="@+id/editText4"
+        android:layout_width="wrap_content"
+        android:layout_height="74dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="91dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="567dp"
+        android:inputType="numberDecimal"
+        android:text="Convert Currency To?"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="150dp"
+        android:layout_marginRight="150dp"
+        android:layout_marginBottom="202dp"
+        android:background="#F5F0F5"
+        android:onClick="clickFunction"
+        android:text="Click To Convert"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="#070505" />
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="201dp"
+        android:layout_height="121dp"
+        android:layout_above="@+id/s2"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="-4dp"
+        android:layout_marginLeft="-4dp"
+        android:layout_marginTop="65dp"
+        android:layout_marginEnd="214dp"
+        android:layout_marginRight="214dp"
+        android:layout_marginBottom="544dp"
+        android:inputType="numberDecimal"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textColor="@android:color/black" />
+
+</RelativeLayout>
